@@ -3,13 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolios_Nicolas</title>
+    <title>Nicolas — Portafolio Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portafolios de Nicolas</h1>
-    <ul>
-        <li><a href="./Tabla_dinamica/tabla_dinamica.html">Tabla dinámica</a></li>
-    </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#principal" aria-label="Nicolás — Portafolio Profesional">
+                    <span aria-hidden="true">⟡</span>
+                    <span class="brand">Nicolás <small>Portafolio Profesional</small></span>
+                </a>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false">☰</button>
+                <ul class="nav-list">
+                    <li><a href="#acerca" data-scroll>Sobre mí</a></li>
+                    <li><a href="#proyectos" data-scroll>Proyectos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="principal" class="principal">
+            <div class="fondo-principal"></div>
+            <div class="container contenido-principal">
+                <h1 class="titulo-principal">Nicolás — <span class="accent">Portafolio Profesional</span></h1>
+                <p class="subtitulo">Desarrollo y diseño de interfaces con intención y cuidado.</p>
+                <div class="acciones-principal">
+                    <a href="#acerca" class="btn btn-principal" data-scroll>Ver mi trabajo</a>
+                    <a href="#proyectos" class="btn btn-secundario" data-scroll>Proyectos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="acerca" class="section">
+            <div class="container">
+                <h2>Sobre mí</h2>
+                <div class="fila dos-columnas">
+                    <div class="portrait">
+                        <img src="imagenes/perfil.jpg" alt="Retrato de Nicolás">
+                    </div>
+                    <div class="bio">
+                        <p>Soy desarrollador y diseñador. Me inspira la convergencia entre la estética clásica y
+                        la innovación digital. Busco diseñar interfaces con intención, equilibrio y carácter, 
+                        fusionando la profundidad visual de mundos con la precisión contemporánea del diseño 
+                        moderno.</p>
+                        <p class="muted">Habilidades: HTML, CSS, JavaScript, Java.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="fila proyectos">
+                    <article class="card tarjeta">
+                        <h3>Proyecto 1</h3>
+                        <p class="card-desc">Gestión Fechas.</p>
+                          <div class="card-icons">
+                            <a href=" https://nicolas09128.github.io/Fecha/" target="_blank" title="Ver proyecto">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                            <a href="https://github.com/nicolas09128/Fecha" target="_blank" title="Ver código en GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                          </div>
+                    </article>
+            <article class="card tarjeta">
+                <h3>Proyecto 2</h3>
+                <p class="card-desc">Tabla dinamica.</p>
+                <div class="card-icons">
+                    <a href="https://nicolas09128.github.io/Tabla_Dinamica/" target="_blank" title="Ver proyecto">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                    <a href="https://github.com/nicolas09128/Tabla_Dinamica" target="_blank" title="Ver código en GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="card tarjeta">
+                <h3>Proyecto 4</h3>
+                <p class="card-desc">Bloque Movil.</p>
+                <div class="card-icons">
+                    <a href=" https://nicolas09128.github.io/Bloque_movil/" target="_blank" title="Ver proyecto">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                    <a href="https://github.com/nicolas09128/Bloque_movil" target="_blank" title="Ver código en GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="card tarjeta">
+                <h3>Proyecto 5</h3>
+                <p class="card-desc">Modo oscuro y claro.</p>
+                <div class="card-icons">
+                    <a href="https://nicolas09128.github.io/Modo_interruptor/" target="_blank" title="Ver proyecto">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                    <a href="https://github.com/nicolas09128/Modo_interruptor" target="_blank" title="Ver código en GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="card tarjeta">
+                <h3>Proyecto 6</h3>
+                <p class="card-desc">Guia de estilos del Portfolio.</p>
+                <div class="card-icons">
+                    <a href="https://www.figma.com/design/qEOb1LTPBxiEndxAqOrCah/Gu%C3%ADa-de-estilo-de-Portfolio?m=dev&t=BmJONVcCYx2NddzW-1" target="_blank" title="Ver proyecto">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="muted">© Nicolás | El Desarrollador — Hecho con cuidado.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
